@@ -11,7 +11,7 @@ let currentSong;
 
 
 /**********************************************
- *              EVENTOS DEL DOM               *
+ *                 DOM EVENTS                 *
  **********************************************/
 window.addEventListener('load', () => {
   for(let i = 0; i < songsNames.getElementsByTagName('div').length; i++){
@@ -86,7 +86,7 @@ skipEnd.addEventListener('click', () => {
 });
 
 /**********************************************
- *                 FUNCIONES                  *
+ *                 FUNCTIONS                  *
  **********************************************/
 function play(){
   playPause.className = 'bi bi-pause-fill';

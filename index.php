@@ -20,14 +20,14 @@
       echo "<div>$song</div>";
     }
   } else {
-    echo 'No hay musica';
+    echo 'There is no music';
   }
   ?>
   </div>
 
   <div id="controlBar">
     <div id="songName">
-      hola esto es una cancion
+      This should be a song
     </div>
     <div id="songControls">
       <i id="lastSong" class="bi bi-skip-start-fill"></i>
