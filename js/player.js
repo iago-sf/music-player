@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
 });
 
 playPause.addEventListener('click', () => {
-  if(playPause.className == 'bi bi-play-fill'){
+  if(playPause.classList.contains('bi-play-fill')) {
     play();
   
   } else {
@@ -89,12 +89,12 @@ skipEnd.addEventListener('click', () => {
  *                 FUNCTIONS                  *
  **********************************************/
 function play(){
-  playPause.className = 'bi bi-pause-fill';
+  playPause.classList.replace('bi-play-fill', 'bi-pause-fill');
   currentSong.play();
 }
 
 function pause(){
-  playPause.className = 'bi bi-play-fill';
+  playPause.classList.replace('bi-pause-fill', 'bi-play-fill');
   currentSong.pause();
 }
 

@@ -23,32 +23,13 @@
   margin-top: 1rem;
 }
 
-#lastSong{
+.controlButton{
   font-size: 2rem;
   padding: .5rem;
 }
-
-#playPause{
-  font-size: 2rem;
-  padding: .5rem;
-}
-
-#nextSong{
-  font-size: 2rem;
-  padding: .5rem;
-}
-
-#lastSong:hover{
+.controlButton:hover{
   background-color: rgb(28, 48, 48);
-  border-radius: 1000px;
-}
-
-#playPause:hover{
-  background-color: rgb(28, 48, 48);
-  border-radius: 1000px;
-}
-
-#nextSong:hover{
-  background-color: rgb(28, 48, 48);
-  border-radius: 1000px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
 }

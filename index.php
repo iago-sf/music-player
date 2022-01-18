@@ -1,5 +1,12 @@
 <?php 
-  $music = array_diff(scandir('./music'), array('..', '.'));;
+  $archives = scandir('./music');
+  $music = [];
+
+  for ($i=0; $i < count($archives); $i++) { 
+    if(pathinfo($archives[$i], PATHINFO_EXTENSION) == 'mp3'){
+      array_push($music, $archives[$i]);
+    }
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,9 +37,9 @@
       This should be a song
     </div>
     <div id="songControls">
-      <i id="lastSong" class="bi bi-skip-start-fill"></i>
-      <i id="playPause" class="bi bi-play-fill"></i>
-      <i id="nextSong" class="bi bi-skip-end-fill"></i>
+      <i id="lastSong" class="controlButton bi bi-skip-start-fill"></i>
+      <i id="playPause" class="controlButton bi bi-play-fill"></i>
+      <i id="nextSong" class="controlButton bi bi-skip-end-fill"></i>
     </div>
   </div>
   
